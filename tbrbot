@@ -57,7 +57,7 @@
       curates: 0
     };
 
-    settings.prototype.pupScriptUrl = 'https://github.com/Notturno/Team-Brasil-BOT/blob/master/tbrbot';
+    settings.prototype.pupScriptUrl = 'https://raw.github.com/Notturno/Team-Brasil-BOT/master/tbrbot';
 
     settings.prototype.afkTime = 30 * 60 * 1000;
 
