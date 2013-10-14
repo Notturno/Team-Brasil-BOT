@@ -69,7 +69,7 @@
       },{
         interval: 5,
         offset: 0,
-        msg: "/em: Make sure that you're voting or you will be removed from the wait list and from the DJ Booth."
+        msg: "/em Stay always voting or you will be removed from the wait list and from the DJ Booth."
       },{
         interval: 9,
         offset: 0,
@@ -720,7 +720,7 @@
       var msg1, msg2;
       msg1 = "Todo tipo de musica eletronica de boa qualidade é permitida aqui. Incluindo Electro, Dubstep, Techno, Trap, EDM, ";
       msg1 += "Hardstyle, House e Trance. ";
-      msg2 = "All kinds of electronic song of good quality is allowed here. Including Electro, Dubstep, Techno, Trap, EDM, ";
+      msg2 = "All types of electro songs are allowed. Including Electro, Dubstep, Techno, Trap, EDM, ";
       msg2 += "Hardstyle, House and Trance. ";	  
       API.sendChat(msg1);
 	  return setTimeout((function() {
