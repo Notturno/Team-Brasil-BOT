@@ -19,7 +19,7 @@
 
     settings.prototype.currentsong = {};
 
-    settings.prototype.users = {};!
+    settings.prototype.users = {};
 
     settings.prototype.djs = [];
 
@@ -57,7 +57,7 @@
       curates: 0
     };
 
-    settings.prototype.pupScriptUrl = 'https://raw.github.com/Notturno/Team-Brasil-BOT/master/tbrbot';
+    settings.prototype.pupScriptUrl = 'https://raw.github.com/Notturno/P3-BOT/master/';
 
     settings.prototype.afkTime = 30 * 60 * 1000;
 
@@ -69,11 +69,11 @@
       },{
         interval: 5,
         offset: 0,
-        msg: "/em Stay always voting or you will be removed from the wait list and from the DJ Booth."
+        msg: "/em: Make sure that you're voting or you will be removed from the wait list and from the DJ Booth."
       },{
         interval: 9,
         offset: 0,
-        msg: "/em: Entre no nosso grupo do facebook e fique por dentro de todas as nossas atualizações: https://www.facebook.com/groups/plugdjteambrasil/"
+        msg: "/em: Entre no nosso grupo do facebook e fique por dentro de todas as nossas atualizações: https://www.facebook.com/groups/proj3ctbr/"
       }
     ];
 
@@ -349,7 +349,7 @@
   })();
 
   pupOnline = function() {
-    return API.sendChat("/me: TBRbot Online! v 4.0");
+    return API.sendChat("/me: P3bot Online! v 2.0");
   };
 
   populateUserData = function() {
@@ -591,7 +591,7 @@
 
     cookieCommand.prototype.getCookie = function() {
       var c, cookies;
-      cookies = ["muita aveia", "um cafesinho", "um toddynho", "um copo de coca-cola", "uma dose de Ipioca", "limões", "um danoninho", "um cafe extra forte", "maçãs", "bananas", "um brinquedinho", "amendoins", "muita aveia"];
+      cookies = ["uma paçoca", "um cafesinho", "um toddynho", "uma rola", "uma dose de Ipioca", "um pouco de maconha", "um danoninho", "um cafe extra forte", "maçãs", "bananas", "um brinquedinho", "amendoins", "muita aveia"];
       c = Math.floor(Math.random() * cookies.length);
       return cookies[c];
     };
@@ -720,7 +720,7 @@
       var msg1, msg2;
       msg1 = "Todo tipo de musica eletronica de boa qualidade é permitida aqui. Incluindo Electro, Dubstep, Techno, Trap, EDM, ";
       msg1 += "Hardstyle, House e Trance. ";
-      msg2 = "All types of electro songs are allowed. Including Electro, Dubstep, Techno, Trap, EDM, ";
+      msg2 = "All kinds of electronic song of good quality is allowed here. Including Electro, Dubstep, Techno, Trap, EDM, ";
       msg2 += "Hardstyle, House and Trance. ";	  
       API.sendChat(msg1);
 	  return setTimeout((function() {
@@ -754,11 +754,11 @@
       msg1 += "3) Respeitar os moderadores da sala.";
       msg1 += "4) Sem flood no chat . ";
       msg1 += "5) Não fique pedindo cargos. ";
-      msg2  = "1) Time limit is 6 minutes and 30 seconds. ";
-      msg2 += "2) Don't write in /me or /em. ";
+      msg2 = "1) Maximum time 6 minutes and 30 seconds. ";
+      msg2 += "2) Can't write in /me or /em. ";
       msg2 += "3) Respect the moderators of the room. ";
-      msg2 += "4) Don't flood in our chat. ";
-      msg2 += "5) Don't ask for positions ";
+      msg2 += "4) Without flood in the chat. ";
+      msg2 += "5) Can't ask positions ";
       API.sendChat(msg1);
       return setTimeout((function() {
         return API.sendChat(msg2);
@@ -785,7 +785,7 @@
 
     roomHelpCommand.prototype.functionality = function() {
       var msg1, msg2;
-      msg1 = "Bem vindo a sala #P3BR! Ser DJ: Crie uma lista de reprodução e coloque Musica do Youtube ou soundcloud. ";
+      msg1 = "Bem vindo a sala PROJ3CT BR! Ser DJ: Crie uma lista de reprodução e coloque Musica do Youtube ou soundcloud. ";
       msg1 += "Se é novo procure pelo seu nome na sua tela (próximo a cabine do DJ) e depois mude o nome. ";
       msg1 += "Para Ganhar Pontos clique em Bacana. ";
       msg2 = "Divirta-se! Qualquer outra duvida chame um adm da sala ";
@@ -815,7 +815,7 @@
 
     sourceCommand.prototype.functionality = function() {
       var msg;
-      msg = ' BOT criado por Backus e editado por Notturno para a Team Brasil ';
+      msg = ' BOT criado por Backus e editado por Notturno para a PROJ3CT BR ';
       return API.sendChat(msg);
     };
 
@@ -884,16 +884,16 @@
     }
 
     downloadCommand.prototype.init = function() {
-      this.command = '!tbr';
+      this.command = '!p3';
       this.parseType = 'exact';
       return this.rankPrivelege = 'featured';
     };
 
     downloadCommand.prototype.functionality = function() {
       var msg;
-      msg = "  Participe do grupo! https://www.facebook.com/groups/plugdjteambrasil/ ";
-      msg += "= ";
-      msg += "= ";
+      msg = "  Participe do grupo! https://www.facebook.com/groups/proj3ctbr/ ";
+      msg += " ";
+      msg += " ";
       return API.sendChat(msg);
     };
 
@@ -1075,7 +1075,7 @@
     reloadCommand.prototype.init = function() {
       this.command = '!reload';
       this.parseType = 'exact';
-      return this.rankPrivelege = 'cohost';
+      return this.rankPrivelege = 'manager';
     };
 
     reloadCommand.prototype.functionality = function() {
