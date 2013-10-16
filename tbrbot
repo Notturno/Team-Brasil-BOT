@@ -815,7 +815,7 @@
 
     sourceCommand.prototype.functionality = function() {
       var msg;
-      msg = ' BOT criado por Backus e editado por Notturno para a PROJ3CT BR ';
+      msg = ' BOT criado por Backus e editado por Notturno para a TBR ';
       return API.sendChat(msg);
     };
 
