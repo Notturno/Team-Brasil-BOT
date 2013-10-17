@@ -720,7 +720,7 @@
       var msg1, msg2;
       msg1 = "Todo tipo de musica eletronica de boa qualidade é permitida aqui. Incluindo Electro, Dubstep, Techno, Trap, EDM, ";
       msg1 += "Hardstyle, House e Trance. ";
-      msg2 = "All types of electro music is allowed here. Including Electro, Dubstep, Techno, Trap, EDM, ";
+      msg2 = "All kind of eletronic music is allowed here. Like: Electro, Dubstep, Tech House, Trap Music, EDM, Hardstyle and Trance. ";
       msg2 += "Hardstyle, House and Trance. ";	  
       API.sendChat(msg1);
 	  return setTimeout((function() {
