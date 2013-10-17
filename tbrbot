@@ -711,7 +711,7 @@
     }
 
     themeCommand.prototype.init = function() {
-      this.command = '!temas';
+      this.command = '';
       this.parseType = 'startsWith';
       return this.rankPrivelege = 'featured';
     };
@@ -742,7 +742,7 @@
     }
 
     rulesCommand.prototype.init = function() {
-      this.command = '!regras';
+      this.command = '';
       this.parseType = 'startsWith';
       return this.rankPrivelege = 'featured';
     };
