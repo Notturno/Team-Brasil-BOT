@@ -742,7 +742,7 @@
     }
 
     rulesCommand.prototype.init = function() {
-      this.command = '!regras';
+      this.command = '!regrs';
       this.parseType = 'startsWith';
       return this.rankPrivelege = 'featured';
     };
