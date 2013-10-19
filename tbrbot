@@ -711,7 +711,7 @@
     }
 
     themeCommand.prototype.init = function() {
-      this.command = '!temas';
+      this.command = '!tems';
       this.parseType = 'startsWith';
       return this.rankPrivelege = 'featured';
     };
