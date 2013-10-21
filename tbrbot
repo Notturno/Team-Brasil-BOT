@@ -1047,7 +1047,7 @@
     }
 
     dieCommand.prototype.init = function() {
-      this.command = '!off';
+      this.command = '!desligar';
       this.parseType = 'exact';
       return this.rankPrivelege = 'cohost';
     };
